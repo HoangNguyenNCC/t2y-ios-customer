@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterSectionHeader" customModule="Trailer2You" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FilterSectionHeader" customModule="Trailer2You" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qkR-mF-XVM">
+                    <rect key="frame" x="25" y="26" width="86.5" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trailer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkW-ZF-B9P">
+                            <rect key="frame" x="0.0" y="0.0" width="86.5" height="19.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trailer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEU-dj-OCN">
+                            <rect key="frame" x="0.0" y="19.5" width="86.5" height="16.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mk-HT-B5J">
+                    <rect key="frame" x="365" y="35" width="24" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4Mk-HT-B5J" secondAttribute="height" multiplier="13:12" id="gdO-V1-Rjc"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="arrowtriangle.down.fill" catalog="system"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qkR-mF-XVM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="R6I-Xb-Ehr"/>
+                <constraint firstItem="4Mk-HT-B5J" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VQP-h7-Rb5"/>
+                <constraint firstItem="qkR-mF-XVM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZPH-uv-2pN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Mk-HT-B5J" secondAttribute="trailing" constant="25" id="wGn-rx-Yoa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collapseButton" destination="4Mk-HT-B5J" id="6YI-pr-7Fb"/>
+                <outlet property="subtitle" destination="EEU-dj-OCN" id="9QB-uL-zNK"/>
+                <outlet property="title" destination="BkW-ZF-B9P" id="kl9-Yl-32u"/>
+            </connections>
+            <point key="canvasLocation" x="81.599999999999994" y="180.80959520239881"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="124"/>
+    </resources>
+</document>
